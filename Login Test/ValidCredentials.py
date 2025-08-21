@@ -36,6 +36,3 @@ def test_with_valid_credentials():
         print(f"Login Issue = {e}")
     finally:
         driver.quit()
-
-if __name__ == "__main__":
-    test_with_valid_credentials()
