@@ -22,6 +22,7 @@ def test_with_valid_credentials():
     # driver = webdriver.Chrome() # Open Chrome Browser
     try:
         driver.get(URL) # get to Open URL
+        print("----- Valid Credentials -----")
         driver.find_element(By.ID,"username").send_keys(Login_Username)
         driver.find_element(By.ID,"password").send_keys(Login_Password)
         WebDriverWait(driver,10).until(EC.element_to_be_clickable((By.CLASS_NAME,"radius"))).click()
